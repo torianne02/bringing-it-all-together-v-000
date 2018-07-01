@@ -27,10 +27,10 @@ class Dog
   end
 
   def self.new_from_db(row)
-    dog_id = row[0]
-    dog_name = row[1]
-    dog_breed = row[2]
-    Dog.new(dog_id, dog_name, dog_breed)
+    dog_id: row[0]
+    dog_name: row[1]
+    dog_breed: row[2]
+    Dog.new(dog_id:, dog_name:, dog_breed:)
   end
 
   def save
